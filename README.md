@@ -3,11 +3,15 @@
 This is Apollo Server Sequelize and MySQL starter project 
 ### Installation
 ```bash
-
+#yarn commands
 yarn 
-
 yarn dev
 
+
+#Sequelize commands
+#npm i -g sequelize-cli
+sequelize init
+sequelize model:create --name User --attributes name:string,email:string,password:string
 sequelize db:migrate
 ```
 Queries and mutations
