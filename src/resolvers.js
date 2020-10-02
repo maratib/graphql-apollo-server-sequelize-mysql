@@ -26,6 +26,26 @@ const resolvers = {
 		},
 		async createRecipe(root, { userId, title, ingredients, direction }, { models }) {
 			return models.Recipe.create({ userId, title, ingredients, direction });
+		},
+
+		async updateRecipe(root, { id, title }, { models }) {
+			models.Recipe.update({
+				title
+			}, {
+				where: {
+					id
+				}
+			});
+			return true;
+		},
+
+		async deleteRecipe(root, { id }, { models }) {
+			models.Recipe.destroy({
+				where: {
+					id
+				}
+			});
+			return true;
 		}
 	},
 	
