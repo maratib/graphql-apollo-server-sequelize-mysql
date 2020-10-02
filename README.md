@@ -58,6 +58,16 @@ mutation {
   }
 }
 
+//To update a Recipe
+mutation {
+  updateRecipe(id: 3, title: "This is a new Title")
+}
+
+//To delete a Recipe
+mutation {
+  deleteRecipe(id: 1) 
+}
+
 //To get all Recipes
 {
   allRecipes {
