@@ -1,4 +1,4 @@
-# GraphQL, Apollo-Server, Sequelize and MySQL CRUD Starter
+# GraphQL, Apollo-Server, Sequelize and MySQL CRUD
 
 This is Apollo Server Sequelize and MySQL starter project 
 ### Installation
