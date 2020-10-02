@@ -47,6 +47,9 @@ mutation {
 //To get a User with the list of recipes
 {
   user(id: 1) {
+    id
+    name
+    email
     recipes {
       id
       title
