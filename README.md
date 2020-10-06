@@ -18,7 +18,7 @@ Queries and mutations
 ```javascript
 //To Create user
 mutation {
-  createUser(name: "Bob", 
+  addUser(name: "Bob", 
   email: "bob@mail.com", 
   password:"1234") {
     id
@@ -30,7 +30,7 @@ mutation {
 
 //To Create Recipe
 mutation {
-   createRecipe(
+   addRecipe(
     userId: 1
     title: "Sample 1"
     ingredients: "Salt, Pepper"

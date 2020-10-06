@@ -17,14 +17,14 @@ const resolvers = {
 	},
 
 	Mutation: {
-		async createUser(root, { name, email, password }, { models }) {
+		async addUser(root, { name, email, password }, { models }) {
 			return models.User.create({
 				name,
 				email,
 				password: await bcrypt.hash(password, 10)
 			});
 		},
-		async createRecipe(root, { userId, title, ingredients, direction }, { models }) {
+		async addRecipe(root, { userId, title, ingredients, direction }, { models }) {
 			return models.Recipe.create({ userId, title, ingredients, direction });
 		},
 

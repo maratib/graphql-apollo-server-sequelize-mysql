@@ -16,7 +16,9 @@ module.exports = (sequelize, DataTypes) => {
   User.init({
     name: { type: DataTypes.STRING, allowNull: false},
     email: { type: DataTypes.STRING, unique: true, allowNull: false },
-    password: { type: DataTypes.STRING, allowNull: false }
+    password: { type: DataTypes.STRING, allowNull: false },
+    isadmin: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
+    token: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',
